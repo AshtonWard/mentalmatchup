@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="158dp"
+        android:layout_height="56dp"
+        android:text="Difficulty"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answer_A"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/difbtns"
+        android:text="Easy (10)"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/answer_B"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/difbtns2"
+        android:text="Medium (18)"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_A" />
+
+    <Button
+        android:id="@+id/answer_C"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/difbtns3"
+        android:text="Hard (24)"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_B" />
+
+    <Button
+        android:id="@+id/answer_D"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/difbtns4"
+        android:text="Challenging (36)"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_C" /> <!-- Red color -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
